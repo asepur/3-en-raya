@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Poppins:wght@100;300;500;800&family=Silkscreen:wght@400;700&display=swap');
+
+:root {
+  font-family: '04b';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(144,98,175);
+  background: linear-gradient(180deg, rgb(26, 24, 51) 0%, rgb(132, 121, 136) 46%, rgb(41, 41, 58) 100%);
+
+  font-synthesis: none;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h4{
+  font-family: '04b';  
+  font-size: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.board {
+  width: fit-content;
+  margin: 40px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.board .game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+
+
+/* ANIMACIÓN DEL LOGO */
+
+.logoImg {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out 1s;
+  transition-delay: 2s;
+  position: relative;
+}
+
+.logoImg.shrink {
+  height: 25vh; /* Ajusta el valor según prefieras */
+}
+
+.logoImg img {
+  transition: transform 1s ease-in-out;
+  transition-delay: 2s;
+}
+
+.logoImg.shrink img {
+  transform: scale(0.6); /* Reducimos el tamaño de la imagen */
+}

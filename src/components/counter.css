@@ -1,0 +1,35 @@
+
+.turn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 15px auto;
+    width: fit-content;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .turn .square__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .turn .square,
+  .winner .square {
+    width: 70px;
+    height: 70px;
+    pointer-events: none;
+    border-color: transparent;
+    font-size: 30px;
+  }
+  
+  .square.is-selected {
+    color: #fff;
+    -webkit-box-shadow: inset 0px 0px 25px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 25px -3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 25px -3px rgba(0,0,0,0.75);
+    border: 2px solid #fff;
+  }
