@@ -12,6 +12,8 @@ import LoadingBar from "./components/LoadingBar.jsx"
 import './variables.css';
 
 
+
+
 function App() {
   const [board, setBoard] = useState(() => {
     const boardFromStorage = window.localStorage.getItem('board')
